@@ -65,7 +65,7 @@ const ProjectsPage = () => {
           <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <h2 className="text-xl font-bold text-red-500 mb-4">Projects</h2>
             {projects.length>1 ?<div className="grid grid-cols-1 gap-2">
-              {projects.map((project) => (
+              {projects.map((project:any) => (
                 <a
                   key={project.id}
                   href={`#${project.id}`}
@@ -80,32 +80,6 @@ const ProjectsPage = () => {
           </div>
         </div>
       </div>
-
-      {projects.length>1 ? <div className="space-y-16 mt-16 px-4 flex flex-col items-center">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            id={project.id}
-            className="bg-gray-50 p-6 rounded-lg shadow-md w-full md:w-4/5"
-          >
-            <h2 className="text-3xl font-bold text-red-500 mb-4">{project.name}</h2>
-            <Image
-              src={project.imageUrl}
-              alt={project.name}
-              width={500}
-              height={500}
-              className="rounded-lg mb-4 h-auto object-cover mx-auto"
-            />
-            <p className="text-gray-700 indent-4 mt-4">{project.details}</p>
-          </div>
-        ))}
-      </div>
-      :
-      <div className="bg-gray-50 p-6 rounded-lg shadow-md w-full md:w-4/5 mt-10">
-      <h1 className="text-2xl font-bold text-red-600">;)</h1>
-        <p className="text-gray-700">No projects available at the moment..</p>
-      </div>
-      }
     </div>
   );
 };
