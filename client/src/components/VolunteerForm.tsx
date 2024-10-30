@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { LucideHeartHandshake, Send } from "lucide-react";
@@ -31,30 +32,30 @@ export default function VolunteerForm() {
       name: formData.get("name"),
       email: formData.get("email"),
       phone: formData.get("phone"),
-      college_work: formData.get("college/work"),
-      duration: formData.get("duration"),
-      address: formData.get("address") || "",
+      college: formData.get("college"),
+      RegistrationDuration: formData.get("RegistrationDuration"),
+      Address: formData.get("Address") || "",
     };
 
     try {
-      const response = await fetch("/api/Volunteertemp", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) {
+        const response = await fetch("/api/Volunteertemp", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
         const result = await response.json();
-        throw new Error(result.error || "Something went wrong");
-      }
+        console.log("Response:", result); 
 
-      setSubmitted(true);
+        if (!response.ok) {
+            throw new Error(result.error || "Something went wrong");
+        }
+
+        setSubmitted(true);
     } catch (error: any) {
-      setError(error.message);
-    } finally {
-      setIsLoading(false);
+        console.error("Full error:", error);
+        setError(error.message);
     }
   };
 
@@ -114,32 +115,31 @@ export default function VolunteerForm() {
                 />
               </div>
               <div>
-                <Label htmlFor="college/working">College/Working</Label>
+                <Label htmlFor="college">College/Working</Label>
                 <Input
-                  id="college/working"
-                  name="college/working"
+                  id="college"
+                  name="college"
                   type="text"
                   placeholder="Enter your current status"
                   required
                 />
               </div>
               <div>
-                <Label htmlFor="duration">Registration duration</Label>
+                <Label htmlFor="RegistrationDuration">Registration duration</Label>
                 <Input
-                  id="duration"
-                  name="duration"
+                  id="RegistrationDuration"
+                  name="RegistrationDuration"
                   type="number"
                   placeholder="Enter duration in weeks"
                   required
                 />
               </div>
               <div>
-                <Label htmlFor="address">Address</Label>
+                <Label htmlFor="Address">Address</Label>
                 <Textarea
-                  id="address"
-                  name="address"
+                  id="Address"
+                  name="Address"
                   placeholder="Enter your current address"
-                  required
                 />
               </div>
               {error && <p className="text-red-500 text-sm">{error}</p>}

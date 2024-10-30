@@ -55,6 +55,22 @@ export default function PasswordCheck() {
                 </div>
               </Button>
             </Link>
+
+            <Link href="/Admin/Givers">
+              <Button variant="outline">
+                <div className="flex flex-col gap-y-2 gap-x-2">
+                  <span>View Who Wants to pay</span>
+                </div>
+              </Button>
+            </Link>
+
+            <Link href="/Admin/VolunteerRequest">
+              <Button variant="outline">
+                <div className="flex flex-col gap-y-2 gap-x-2">
+                  <span>View Who Wants to be a Volunteer</span>
+                </div>
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -70,6 +86,7 @@ export default function PasswordCheck() {
                 <li>Upload new media content</li>
                 <li>Review recent payments</li>
                 <li>Update volunteer information</li>
+                <li>Check who wants to pay</li>
               </ul>
             </CardContent>
           </Card>

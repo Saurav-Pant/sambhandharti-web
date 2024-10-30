@@ -4,9 +4,6 @@ import AdminLogin from '@/components/AdminLogin';
 import React, { useState, useEffect } from 'react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 
-
-
-
 const VolunteerDetails = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -65,7 +62,7 @@ const VolunteerDetails = () => {
       hours: 12
     }
   ];
-  
+
 
   if (isLoading) {
     return <div>Loading...</div>;

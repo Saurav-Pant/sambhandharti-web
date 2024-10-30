@@ -28,3 +28,14 @@ model ContactMessage {
     message   String?
     createdAt DateTime @default(now())
 }
+
+model FindVolunteer {
+    id        String   @id @default(auto()) @map("_id") @db.ObjectId
+    name      String
+    email     String
+    phone     String
+    college   String
+    RegistrationDuration Int
+    Address    String?
+    createdAt DateTime @default(now())
+}

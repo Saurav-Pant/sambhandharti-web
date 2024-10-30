@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import prisma from "@/lib/prisma";
 
 export async function POST(req: Request) {
@@ -37,6 +37,17 @@ export async function POST(req: Request) {
     }
 }
 
-export async function GET() {
-    return NextResponse.json({ message: "Hello from DonateTemp API" });
+
+export async function GET(req: NextRequest) {
+    try {
+        const contactMessages = await prisma.contactMessage.findMany();
+        console.log(contactMessages);
+        return NextResponse.json(contactMessages);
+    } catch (error) {
+        console.error("Error fetching contact messages:", error);
+        return NextResponse.json(
+            { error: "An error occurred while fetching contact messages." },
+            { status: 500 }
+        );
+    }
 }
