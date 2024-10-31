@@ -43,7 +43,7 @@ export default function Component({ className = "" }: { className?: string }) {
 
   return (
     <section className={`bg-orange-50/50 dark:bg-gray-900 py-16 ${className}`}>
-      <div className="container px-4">
+      <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Our Impact in
@@ -55,19 +55,19 @@ export default function Component({ className = "" }: { className?: string }) {
           </p>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="flex justify-center">
           <Carousel
             opts={{
               loop: true,
-              align: "start",
+              align: "center",
             }}
             plugins={[plugin]}
-            className="w-full"
+            className="w-full max-w-6xl"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 md:-ml-4">
               {GalleryData.map((item, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="relative h-[300px] md:h-[400px] m-2">
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
+                  <div className="relative h-[300px] md:h-[400px] w-full max-w-[400px]">
                     <Image
                       src={item.imgSrc}
                       alt={item.caption}
@@ -84,8 +84,8 @@ export default function Component({ className = "" }: { className?: string }) {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-[-30px] top-1/2 -translate-y-1/2 fill-black" />
-            <CarouselNext className="absolute right-[-30px] top-1/2 -translate-y-1/2 fill-black" />
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
           </Carousel>
         </div>
       </div>
