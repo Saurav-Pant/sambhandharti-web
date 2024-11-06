@@ -80,7 +80,7 @@ About Us
 </h1>
 
 <p className='text-justify pt-4 text-lg text-gray-600 dark:text-gray-300 ml-0 sm:ml-10 lg:ml-0'>
-<span className="text-orange-600 dark:text-orange-400 font-bold">Sambharndaharti</span> Foundation, a non-government organization established in 2018, is dedicated to improving the well-being of all living beings. Our holistic approach encompasses humans, animals, and the environment, reflected in our innovative programs for the underprivileged, animal welfare, and environmental conservation. We provide comprehensive support to the homeless, including medical care and educational opportunities, while also bringing joy to orphanages through essential supplies and recreational activities. Our commitment extends to rescuing and feeding stray dogs and engaging in tree planting initiatives for environmental sustainability.
+<span className="text-orange-600 dark:text-orange-400 font-bold">Sambandharthi</span>Foundation is a non-profit organization established in 2021, focused on uplifting underprivileged communities through targeted initiatives in Children’s Education & Literacy and Women’s Empowerment. Our programs deliver vital educational resources and opportunities to children, nurturing their potential and paving the way for a brighter future. We also empower women to achieve economic independence through vocational training and awareness initiatives, fostering resilience and self-reliance. By creating supportive pathways for learning and growth, Sambandharthi strives to make a lasting, transformative impact on individuals and the communities they serve.
 </p>
 </div>
 
@@ -108,17 +108,17 @@ About Us
     <h1 className='lg:mt-0 font-bold text-xl sm:text-4xl  text-orange-600 dark:text-orange-400'>Meet our Founder</h1>
 
     <p className=' text-justify pt-12 text-lg text-gray-600 dark:text-gray-300'>
-    The founder of the NGO,  <span className="text-orange-600 dark:text-orange-400 font-bold px-2">Rajesh Kumar, </span>is a compassionate leader with a vision to create a better world. With a background in social work, Rajesh established the organization in 2018 to uplift marginalized communities, protect animal welfare, and promote environmental sustainability.<br></br> His dedication and hands-on approach have transformed countless lives, making the foundation a beacon of hope for many. Through innovative programs and partnerships, he continues to inspire positive change, driven by a passion for service and a commitment to a more inclusive and sustainable future.
-    </p>
+    <span className="text-orange-600 dark:text-orange-400 font-bold px-2">Sarita Yadav</span> is the founder of the Sambandharthi Foundation, which she established in 2021. With a deep-seated passion for helping others, Sarita dedicated herself to improving the lives of underprivileged communities. Her focus on education and women's empowerment shapes the foundation’s initiatives, providing essential resources for children and supporting women in their quest for economic independence. Sarita's commitment and leadership are at the heart of Sambandharthi, driving positive change and inspiring hope in the communities they serve.
+   </p>
   </div>
 
 </div>
 <div className='grid sm:ml-10 gap-4  sm:grid-cols-2 mt-8'>
   <div className=' '>
-    <h1 className='   lg:mt-0 font-bold text-xl sm:text-4xl  text-orange-600 dark:text-orange-400'>Know about Co-founder and trustee</h1>
+    <h1 className='   lg:mt-0 font-bold text-xl sm:text-4xl  text-orange-600 dark:text-orange-400'>Co-Founder and Trustee</h1>
 
     <p className=' text-justify pt-12 text-lg text-gray-600 dark:text-gray-300'>
-    The co-founder and trustee, <span className="text-orange-600 dark:text-orange-400 font-bold px-2">Anjali Sharma, </span>plays a vital role in shaping the direction of the NGO. With a deep commitment to social causes and a background in education, Anjali has been instrumental in designing impactful programs that address the needs of underprivileged communities.<br></br> As a trustee, she ensures the organization's transparency and ethical operations, while her compassionate leadership continues to inspire both the team and beneficiaries. Her collaborative efforts with the founder have helped the NGO grow, making a lasting difference in the areas of animal welfare, education, and environmental conservation.
+    <span className="text-orange-600 dark:text-orange-400 font-bold px-2">Aditi Yadav</span> the co-founder of the Sambandharthi Foundation, plays a vital role in guiding its mission. With a profound dedication to community development and a strong background in education, she has been pivotal in shaping impactful programs that address the needs of underprivileged communities<br></br>As a trustee, <span className="text-orange-600 dark:text-orange-400 font-bold px-2"> Ritika Yadav</span> ensures the organization operates with transparency and ethical integrity, overseeing all activities with care and diligence. Together, their compassionate leadership inspires both the team and beneficiaries, fostering hope and empowerment.
 
     </p>
   </div>
