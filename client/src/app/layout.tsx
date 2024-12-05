@@ -27,8 +27,8 @@ export default function RootLayout({
           poppins.className
         )}
       >
-        <TopBar />
-        <Navbar />
+        {/* <TopBar /> */}
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>
