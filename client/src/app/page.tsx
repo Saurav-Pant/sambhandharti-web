@@ -14,12 +14,12 @@ const page = () => {
       <Testimonials/>
       <FounderNote/>
       <Footer/>
-    <div className="flex items-center justify-center min-h-screen">
+    {/* <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Page Under Construction</h1>
             <p className="text-lg">We are working hard to bring you this page. Stay tuned!</p>
         </div>
-    </div>
+    </div> */}
     </div>
   );
 };
